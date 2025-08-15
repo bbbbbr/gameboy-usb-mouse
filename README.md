@@ -17,3 +17,7 @@ a ring buffer and read out from the main loop.
 
 Each mouse transfer has 3 bytes: buttons & flags, x and y.
 
+The CH559 firmware may be somewhat specific to some models of logitech mice
+right now (M510 works). The solution may be switching connected mice into "boot"
+mode. Otherwise the firmware would need be to changed on a per-device basis 
+depending on how the mouse packs it's buttons and movements into the HID reports.
