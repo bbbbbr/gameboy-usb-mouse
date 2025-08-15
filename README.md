@@ -1,8 +1,10 @@
 # GBDK/C Mouse Example for Inside Gadgets USB adapter
-
 Example for using a Inside Gadgets Keyboard adapter modified
 to work with a mouse. The adapter is connected to the link port.
 
+https://github.com/user-attachments/assets/03dc71b7-e846-4c97-9b48-a62c6c032300
+
+Adapter:
 https://shop.insidegadgets.com/product/gameboy-usb-keyboard-adapter/
 
 Requires the modified firmware at:
