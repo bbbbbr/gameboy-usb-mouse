@@ -8,7 +8,7 @@ Adapter:
 https://shop.insidegadgets.com/product/gameboy-usb-keyboard-adapter/
 
 Requires the modified firmware at:
-https://github.com/bbbbbr/CH559sdccUSBHost/blob/ig_mouse_adapter/README.md
+https://github.com/bbbbbr/CH559sdccUSBHost/
 
 Once the mouse interrupt is initialized and the data is started,
 it reads the link port connected to the AVR part continually to
