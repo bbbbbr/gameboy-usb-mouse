@@ -76,8 +76,13 @@ void use_mouse_data(void) {
 
         // printf("%hx,%hx,%hx\n", (uint8_t)mouse.buttons_and_flags, (uint8_t)mouse.move_x, (uint8_t)mouse.move_y);
 
+        // If all bytes are 255 then the adapter is probably not connected
+        if (mouse.move_x == mouse.move_y == mouse.buttons_and_flags == 0xffu)
+            return;
+
         // Make sure the data is aligned right (only x and y bytes have bit .7 set)
-        if (((mouse.move_x & mouse.move_y) & FORCE_NONZERO_BIT_MOVE) != 0x00u) {
+        if ((((mouse.move_x & mouse.move_y) & FORCE_NONZERO_BIT_MOVE) != 0x00u) && 
+             ((mouse.buttons_and_flags & FORCE_NONZERO_BIT_BUTTONS) != 0x00u)) {
 
             uint8_t mouse_buttons = (mouse.buttons_and_flags & MOUSE_BUTTON_MASK);
 
