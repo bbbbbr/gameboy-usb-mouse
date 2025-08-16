@@ -25,7 +25,7 @@
 #define SIO_IDX_INCREMENT_WRAP(var) if (var == SIO_BUF_SZ) var = 0u;
 
 #define SIO_PACKET_SZ         3u
-#define SIO_PACKET_BUF_COUNT  60u  // SZ x COUNT should not be > 255
+#define SIO_PACKET_BUF_COUNT  3u  // SZ x COUNT should not be > 255
 #define SIO_BUF_SZ            (SIO_PACKET_SZ * SIO_PACKET_BUF_COUNT)
 
 
